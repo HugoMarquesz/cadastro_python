@@ -1,0 +1,18 @@
+<body style="
+background:black;
+color:white;
+">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+
+<form method = 'POST' class="container">
+
+  {% csrf_token %}
+
+  {{ usuario_form.as_p }}
+
+  <button type="submit" class="btn btn-success" > Adicionar </button>
+
+</form
